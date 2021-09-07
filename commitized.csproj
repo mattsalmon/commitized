@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <AssemblyName>dotnet-cz</AssemblyName>
+
+    <PackageId>Commitized</PackageId>
+    <PackageVersion>0.0.1</PackageVersion>
+    <Authors>Matt Salmon</Authors>
+    <Description>Like commitizen, but for dotnet</Description>
+
+    <PackAsTool>true</PackAsTool>
+    <ToolCommandName>cz</ToolCommandName>
+    <PackageOutputPath>./nupkg</PackageOutputPath>
+
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="LibGit2Sharp" Version="0.26.2" />
+  </ItemGroup>
+
+</Project>
